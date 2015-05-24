@@ -1,0 +1,20 @@
+<fa-app class="full-screen" fa-pipe-to="mySync">
+  <fa-modifier fa-scale="indexScale.get()" fa-opacity="indexOpacity.get()" fa-origin="[.5, .5]" fa-size="[undefined, 400]">
+    <fa-flexible-layout fa-options="{direction: 0, ratios: [1, 5]}">
+        <fa-modifier fa-opacity="indexOpacity.get()">
+          <fa-grid-layout fa-options="{dimensions: [1, 5]}">
+            <fa-surface fa-background-color="'#ccc'">科室一</fa-surface>
+            <fa-surface fa-background-color="'#ddd'">科室二</fa-surface>
+            <fa-surface fa-background-color="'#abc'">科室三</fa-surface>
+            <fa-surface fa-background-color="'#bbb'">科室️四</fa-surface>
+            <fa-surface fa-background-color="'#ccc'">科室五</fa-surface>
+          </fa-grid-layout>
+        </fa-modifier>
+        <fa-modifier fa-opacity="indexOpacity.get()">
+            <fa-surface>
+                Main content
+            </fa-surface>
+        </fa-modifier>
+    </fa-flexible-layout>
+  </fa-modifier>
+</fa-app>
